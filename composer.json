@@ -1,0 +1,31 @@
+{
+    "name": "connectholland/tulip-api-client",
+    "type": "library",
+    "description": "PHP client library for communicating with the Tulip API.",
+    "keywords": ["Tulip", "API"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niels Nijens",
+            "email": "niels@connectholland.nl",
+            "role": "Lead developer"
+        }
+    ],
+    "require": {
+        "php": "^5.5.0 || ^7.0",
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConnectHolland\\TulipAPI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ConnectHolland\\TulipAPI\\Test\\": "tests/"
+        }
+    }
+}
