@@ -180,7 +180,7 @@ class Client
     {
         $body = array();
         foreach ($parameters as $parameterName => $parameterValue) {
-            if (is_scalar($parameterValue) || is_null($parameterValue)) {
+            if (is_scalar($parameterValue) || (is_null($parameterValue) && $parameterName !== 'id')) {
                 $body[] = array(
                     'name' => $parameterName,
                     'contents' => strval($parameterValue),
