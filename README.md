@@ -2,8 +2,10 @@
 
 [![Latest version on Packagist][ico-version]][link-version]
 [![Software License][ico-license]][link-license]
+[![Scrutinizer Code Quality][ico-quality]][link-quality]
 [![Build Status][ico-build]][link-build]
-[![Coverage Status][ico-coverage]][link-coverage]
+[![Code Coverage][ico-coverage]][link-coverage]
+
 
 PHP client library for communicating with the Tulip API.
 
@@ -99,12 +101,14 @@ This library is licensed under the MIT License. Please see the [LICENSE file](LI
 
 [ico-version]: https://img.shields.io/packagist/v/connectholland/tulip-api-client.svg
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[ico-build]: https://travis-ci.org/ConnectHolland/tulip-api-client.svg?branch=master
-[ico-coverage]: https://coveralls.io/repos/ConnectHolland/tulip-api-client/badge.svg?branch=master
+[ico-build]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/badges/build.png?b=master
+[ico-coverage]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/badges/coverage.png?b=master
+[ico-quality]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/badges/quality-score.png?b=master
 
 [link-version]: https://packagist.org/packages/connectholland/tulip-api-client
 [link-license]: LICENSE.md
-[link-build]: https://travis-ci.org/ConnectHolland/tulip-api-client
-[link-coverage]: https://coveralls.io/r/ConnectHolland/tulip-api-client?branch=master
+[link-build]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/build-status/master
+[link-coverage]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/?branch=master
+[link-quality]: https://scrutinizer-ci.com/g/ConnectHolland/tulip-api-client/?branch=master
 [link-author]: https://github.com/niels-nijens
 [link-contributors]: https://github.com/ConnectHolland/tulip-api-client/contributors
