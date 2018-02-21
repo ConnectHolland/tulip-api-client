@@ -1,0 +1,39 @@
+checks:
+    php: true
+
+coding_style:
+    php: {  }
+
+build:
+    environment:
+        timezone: Europe/Amsterdam
+        postgresql: false
+        rabbitmq: false
+        redis: false
+        mysql: false
+        php:
+            ini:
+                'date.timezone': 'Europe/Amsterdam'
+    project_setup:
+        override: true
+    tests:
+        override:
+            - php-scrutinizer-run
+            -
+                command: 'vendor/bin/phpunit --coverage-clover=code-coverage'
+                coverage:
+                    file: 'code-coverage'
+                    format: 'clover'
+    nodes:
+        php70:
+            environment:
+                php:
+                    version: '7.0'
+        php71:
+            environment:
+                php:
+                    version: '7.1'
+        php72:
+            environment:
+                php:
+                    version: '7.2'
